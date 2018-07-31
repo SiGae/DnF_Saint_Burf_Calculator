@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>홀리오더 버프력 계산기</title>
+</head>
+<style>body{
+    background-image: url("back.png")
+}
+    </style>
+<body>
+    <h1>8/9 개편이후 세인트 버프력 계산기</h1>
+    <br>
+    <form name="dnf">
+        체력 or 정신력:<input type="text" id="ahealth" size="10">
+
+        영축 레벨:<input type="text" id="alevel" size="10">
+        <br>
+        <input type="checkbox" name="weapon0" id="weapon0">구원의 이기 - 십자가
+        <input type="checkbox" name="weapon1" id="weapon1">창성의 구원자 - 십자가
+        <input type="checkbox" name="weapon2" id="weapon2">진 : 끓어오르는 피의 십자가
+        <br>
+        <input type="checkbox" id="sail6">사일6 
+        <input type="checkbox" id="sail9">사일9
+        <br>
+        <input type="checkbox" id="bau6">바우6
+        <input type="checkbox" id="bau9">바우9
+        <br>
+        <input type="checkbox" id="sevenguilityon">오만에 가득찬 눈
+        <input type="checkbox" id="sevenguilityunder">폭식하는 입
+        <input type="checkbox" id="sevenguilitybelt">질투를 말하는 혀
+        <br>
+        <input type="checkbox" id="sevenguility3">칠죄 3셋
+        <br>
+        <input type="checkbox" id="eastsoilon">만년 세월의 빙벽 상의
+        <input type="checkbox" id="eastsoilunder">만년 세월의 한기 하의
+        <input type="checkbox" id="eastsoilbelt">만년 세월의 폭풍 허리
+        <br>
+        <input type="checkbox" id="eastsoil5">동토 5셋
+        <br>
+        <input type="checkbox" id="happy">행복을 품은 옥빛
+        <input type="checkbox" id="hope">희망을 품은 금빛
+        <input type="checkbox" id="clean">순결을 품은 교빛
+        <br>
+        <input type="checkbox" id="fivelight">오광 5
+        <input type="button" value="계산하기" onclick="check()">
+    </form>
+    <br>
+    
+    <br>
+    <br>
+    힘 증가량 : <input type="text" id="force" readonly>
+    지능 증가량 : <input type="text" id="intelli" readonly>
+    <br>
+    <br>
+    물리 공격력 증가량 : <input type="text" id="physical" size="7" readonly>
+    마법 공격력 증가량 : <input type="text" id="magic" size="7" readonly>
+    독립 공격력 증가량 : <input type="text" id="indep" size="7" readonly>
+    <br>
+
+    <h1>
+        사이트 제작 : (카인)김시개암제 <a href="https://www.github.com/sigae"><img src="github.png" width="40"><a></a>
+        <br>
+        written by 모험단 이시은 
+    </h1>
+    
+    <h4>출처 : <a href="https://blog.naver.com/sieun1616/221328928341">뽁뽁뽁</a></h4>
+    <h4>원작자 미허가시 불펌 도용 엄금</h4>
+    <script type="text/javascript" src="burf.js"></script>
+    
+    
+</body>
+</html>
