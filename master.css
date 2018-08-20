@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background-image: url("back.png");
+    margin: 0;
+    /* font-size: 1em; */
+}
+
+header {
+    width: 100vw;
+    text-align: center;
+    background-color: #000000CF;
+    color: #FFFFFFCF;
+    font-size: 32px;
+    box-shadow: 0px 0px 4px 0px #000000CF;
+}
+
+#container {
+    width: 100vw;
+    background: #000000CF;
+    font-size: 16px;
+    color: #FFFFFFCF;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    box-shadow: 0px 0px 4px 0px #000000CF;
+}
+
+#container > div {
+    /* margin-bottom: 16px; */
+}
+
+#condition {
+    user-select: none;
+    margin: 16px;
+}
+
+#condition input[type='checkbox'] {
+    display: none;
+}
+
+#condition div {
+    /* padding: 0; */
+    /* margin: 16px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#condition div label {
+    margin: 8px;
+}
+
+#condition input[type='checkbox'] + label {
+    border: 1px solid #CFCFCFCF;
+    color: #CFCFCFCF;
+    padding: 10px;
+    margin-right: 32px;
+    
+}
+
+#condition input[type='checkbox']:hover + label {
+    border: 1px solid #FFFFFFCF;
+    color: #FFFFFFCF;
+    
+}
+#condition input[type='checkbox']:checked + label::before {
+    content: '√ ';
+    color: #FFFFFFCF;
+    font-weight: bold;
+}
+
+#condition input[type='checkbox']:checked + label {
+    border: 1px solid #FFFFFFFC;
+    color: #FFFFFFCF;
+    font-weight: bold;
+}
+
+input[type='number'] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #FFFFFFCF;
+    color: #FFFFFFCF;
+    outline: none;
+    font-size: 16px;
+    width: 128px;
+    margin-bottom: 8px;
+    margin-right: 32px;
+}
+
+#calc {
+    width: 100%;
+    background: none;
+    border: 2px solid #CFCFCFCF;
+    color: #CFCFCFCF;
+    outline: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#calc:hover {
+    border: 2px solid #FFFFFFCF;
+    color: #FFFFFFCF;
+}
+
+#result {
+    padding: 16px;
+    border: 3px dashed #FFFFFFCF;
+    margin: 16px;
+}
+
+#result p {
+    display: inline-block;
+    margin: 0;
+}
+
+#result span {
+    display: inline-block;
+    /* width: 130px; */
+    margin-right: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: inherit;
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    background-color: #FFFFFFCF;
+    color: #000000CF;
+    box-shadow: 0px 0px 4px 0px #FFFFFFCF;
+    padding: 16px;
+}
